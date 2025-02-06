@@ -24,7 +24,7 @@ class DynFibonacci
 	{
 		cached = rhs.cached;
 		cache = new size_t[cached];
-		std::memcpy(cache, rhs.cache, cached * sizeof(size_t));
+		memcpy(cache, rhs.cache, cached * sizeof(size_t));
 	}
 
 	// TODO: 实现析构器，释放缓存空间
