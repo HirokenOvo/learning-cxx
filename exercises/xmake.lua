@@ -2,7 +2,10 @@ add_rules("mode.debug", "mode.release")
 set_encodings("utf-8")
 set_warnings("all")
 set_kind("binary")
-set_languages("cxx17")
+set_languages("c++20")
+set_toolchains("clang")
+add_cxxflags("-stdlib=libc++")
+add_ldflags("-stdlib=libc++")
 
 -- 格式化输出
 target("exercise00")

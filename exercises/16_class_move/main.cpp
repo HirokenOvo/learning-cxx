@@ -52,10 +52,7 @@ class DynFibonacci
 	}
 
 	// TODO: 实现析构器，释放缓存空间
-	~DynFibonacci()
-	{
-		if (cache != nullptr) delete[] cache;
-	}
+	~DynFibonacci() { delete[] cache; }
 
 	// TODO: 实现正确的缓存优化斐波那契计算
 	size_t operator[](int i)
